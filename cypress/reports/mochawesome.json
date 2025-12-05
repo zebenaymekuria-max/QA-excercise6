@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 0,
+    "passes": 0,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-12-03T18:16:55.598Z",
+    "end": "2025-12-03T18:17:12.420Z",
+    "duration": 16822,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 2,
+    "hasOther": true,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9c08a1de-41d1-498c-97b5-ab96c405f4df",
+      "title": "",
+      "fullFile": "cypress\\e2e\\week-7\\q1-before.cy.js",
+      "file": "cypress\\e2e\\week-7\\q1-before.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "083c4b28-a26b-48d9-84f6-5ab03d6848dd",
+          "title": "Evangadi Authentication Flow with Before & After Hooks",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should allow access to authenticated pages",
+              "fullTitle": "Evangadi Authentication Flow with Before & After Hooks Should allow access to authenticated pages",
+              "timedOut": null,
+              "duration": 4420,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://www.evangadi.com/welcome\");\ncy.contains(\"Welcome\").should(\"be.visible\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `span[role=\"button\"]`, but never found it.\n\nBecause this error occurred during a `after all` hook we are skipping the remaining tests in the current suite: `Evangadi Authentication Flo...`\n\nAlthough you have test retries enabled, we do not retry tests when `before all` or `after all` hooks fail",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `span[role=\"button\"]`, but never found it.\n\nBecause this error occurred during a `after all` hook we are skipping the remaining tests in the current suite: `Evangadi Authentication Flo...`\n\nAlthough you have test retries enabled, we do not retry tests when `before all` or `after all` hooks fail\n    at Context.eval (webpack://cypress_form_automation/./cypress/e2e/week-7/q1-before.cy.js:30:7)",
+                "diff": null
+              },
+              "uuid": "3b779142-b0b9-4c76-a398-4a034baf03dd",
+              "parentUUID": "083c4b28-a26b-48d9-84f6-5ab03d6848dd",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "3b779142-b0b9-4c76-a398-4a034baf03dd"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 4420,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overWrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}
